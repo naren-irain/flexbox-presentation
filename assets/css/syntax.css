@@ -1,0 +1,152 @@
+/*
+	Styles for - Website
+	Responsive - Mobile First
+*/
+
+
+/* Common Styles */
+body {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 1.4;
+}
+@media only screen and (max-width: 1280px) {
+	body {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 13px;
+	}
+	header.wrapper {
+		width: 100%;
+	}
+	header.wrapper h1 {
+		font-size: 1.6em;
+		padding: 1em 4%;
+	}
+}
+@media only screen and (max-width: 518px) {
+	body {
+		font-size: 12px;
+	}
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 960px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.8em;
+	text-align: center;
+	padding: 1em 0;
+	background: #e8edf5;
+}
+h3 {
+	font-size: 1.35em;
+	border-bottom: 1px solid #ccc;
+	padding-top: 1em;
+}
+h3 mark {
+	background: none;
+	color: #4f86e8;
+}
+figure {
+	text-align: center;
+}
+img {
+	/*max-width: none;*/
+	height: auto;
+}
+section {
+	margin: 1em 0 4em;
+}
+a {
+	color: #4f86e8;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* CSS Block */
+
+.cssBanner {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 0;
+	padding-bottom: 31.25%;
+	position: relative;
+}
+@media only screen and (max-width: 750px) {
+	.cssBanner {
+		background-image: url(../img/car-small.jpg);
+		padding-bottom: 47%;
+	}
+}
+@media only screen and (min-width: 751px) {
+	.cssBanner {
+		background-image: url(../img/car-large.jpg);
+	}
+}
+
+/* Image set Block */
+.imageSetIcons {
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 200px;
+	height: 48px;
+	position: relative;
+	background-image: url(../img/icons-1x.png);
+	background-image: -webkit-image-set(url(../img/icons-1x.png) 1x, url(../img/icons-2x.png) 2x);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.imageSetIcons {
+		width: 250px;
+		height: 61px;
+	}
+}
+.svgImageBlock {
+	width: 40%;
+}
+@media only screen and (max-width: 750px) {
+	.svgImageBlock {
+		width: 80%;
+	}
+}
+.faIconsBlk h4 {
+	font-size: 6em;
+}
+.fa-camera {
+	color: #F44336;
+}
+.fa-cart-plus {
+	color: #2eade0;
+}
+.fa-calendar {
+	color: #c36f15;
+}
+
+/* footer */
+footer {
+	overflow: hidden;
+	background: #ddd;
+	color: #777;
+	text-align: center;
+}
+footer p {
+	margin: 4px 0;
+}

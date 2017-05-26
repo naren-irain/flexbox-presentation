@@ -1,0 +1,673 @@
+
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+body {
+	background: #1c1e22;
+    background-color: #1c1e22;
+}
+
+.reveal {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #eee;
+}
+
+::selection {
+    color: #fff;
+    background: #fe5c5d;
+    text-shadow: none;
+}
+
+.reveal .slides>section, .reveal .slides>section>section {
+    line-height: 1.3;
+    font-weight: inherit;
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    margin: 0 0 20px 0;
+    color: #eee;
+    font-family: "Montserrat", Impact, sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: none;
+    text-shadow: none;
+    word-wrap: break-word;
+}
+
+.reveal h1 {
+    font-size: 3.77em;
+}
+
+.reveal h2 {
+    font-size: 3em;
+}
+
+.reveal h3 {
+    font-size: 1.55em;
+}
+
+.reveal h4 {
+    font-size: 1em;
+}
+
+.reveal h1 {
+    text-shadow: none;
+}
+
+
+/*********************************************
+ * OTHER
+ *********************************************/
+
+.reveal p {
+    margin: 20px 0;
+    line-height: 1.3;
+}
+
+
+/* Ensure certain elements are never larger than the slide itself */
+
+.reveal img, .reveal video, .reveal iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+.reveal strong, .reveal b {
+    font-weight: bold;
+}
+.reveal em {
+    font-style: italic;
+}
+.reveal ol, .reveal dl, .reveal ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 0 1em;
+}
+.reveal ol {
+    list-style-type: decimal;
+}
+.reveal ul {
+    list-style-type: disc;
+}
+.reveal ul ul {
+    list-style-type: square;
+}
+
+.reveal ul ul ul {
+    list-style-type: circle;
+}
+
+.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
+    display: block;
+    margin-left: 40px;
+}
+
+.reveal dt {
+    font-weight: bold;
+}
+
+.reveal dd {
+    margin-left: 40px;
+}
+
+.reveal q, .reveal blockquote {
+    quotes: none;
+}
+
+.reveal blockquote {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+    padding: 5px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child, .reveal blockquote p:last-child {
+    display: inline-block;
+}
+
+.reveal q {
+    font-style: italic;
+}
+
+.reveal pre {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 0.55em;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    padding: 20px 0;
+}
+
+.reveal code {
+    font-family: monospace;
+}
+
+.reveal pre code {
+    display: block;
+    padding: 5px;
+    overflow: auto;
+    max-height: 400px;
+    word-wrap: normal;
+}
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.reveal table th {
+    font-weight: bold;
+}
+
+.reveal table th, .reveal table td {
+    text-align: left;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid;
+}
+
+.reveal table th[align="center"], .reveal table td[align="center"] {
+    text-align: center;
+}
+
+.reveal table th[align="right"], .reveal table td[align="right"] {
+    text-align: right;
+}
+
+.reveal table tr:last-child td {
+    border-bottom: none;
+}
+
+.reveal sup {
+    vertical-align: super;
+}
+
+.reveal sub {
+    vertical-align: sub;
+}
+
+.reveal small {
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    vertical-align: top;
+}
+
+.reveal small * {
+    vertical-align: top;
+}
+
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+    color: #fe5c5d;
+    text-decoration: none;
+    -webkit-transition: color 0.15s ease;
+    -moz-transition: color 0.15s ease;
+    transition: color 0.15s ease;
+}
+
+.reveal a:hover {
+    color: #e87b7c;
+    text-shadow: none;
+    border: none;
+}
+
+.reveal .roll span:after {
+    color: #fff;
+    background: #d08a1d;
+}
+
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal section img.border {
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 4px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal section img.plain {
+    border: 0;
+    box-shadow: none;
+}
+
+.reveal a img {
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.reveal a:hover img {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fe5c5d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled {
+    border-right-color: #fe5c5d;
+}
+
+.reveal .controls .navigate-right, .reveal .controls .navigate-right.enabled {
+    border-left-color: #fe5c5d;
+}
+
+.reveal .controls .navigate-up, .reveal .controls .navigate-up.enabled {
+    border-bottom-color: #fe5c5d;
+}
+
+.reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled {
+    border-top-color: #fe5c5d;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+    border-right-color: #f3d7ac;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+    border-left-color: #f3d7ac;
+}
+
+.reveal .controls .navigate-up.enabled:hover {
+    border-bottom-color: #f3d7ac;
+}
+
+.reveal .controls .navigate-down.enabled:hover {
+    border-top-color: #f3d7ac;
+}
+
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+    background: rgba(254, 92, 93, 0.5);
+}
+
+.reveal .progress span {
+    background: #d02f2f;
+    -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * Slide Background
+ *********************************************/
+.reveal .slide-background.present {
+    opacity: 0.85;
+}
+.slide-background:first-child,
+.slide-background:last-child {
+    /*background-image: url('../img/slider/bg-board.jpg');*/
+}
+.slide-background:nth-last-child(2) {
+    /*background-image: url('../img/slider/bg-task.jpg');*/
+}
+.slide-background .slide-background {
+    background-image: none;
+}
+.roadMap {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1620px) {
+	.reveal {
+		font-size: 26px;
+	}
+}
+@media only screen and (max-width: 1420px) {
+	.reveal {
+		font-size: 23px;
+	}
+}
+
+/*********************************************
+ * Overrides
+ *********************************************/
+.reveal section ul li {
+    padding: 0.4em 0;
+}
+.reveal section ol {
+    display: block;
+}
+.reveal .slides {
+	width: 100vw !important;
+    height: 100vh !important;
+	zoom: 1 !important;
+	top: 0 !important;
+	left: 0 !important;
+	transform: none !important;
+}
+.fcBox {
+    width: 100% !important;
+    height: 100% !important;
+	display: flex;
+	flex-wrap: wrap;
+}
+.reveal .introSlide {
+	top: 0 !important;
+	padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.full {
+	width: 100%;
+}
+.half {
+	width: 50%;
+}
+.quarter {
+	width: 25%;
+}
+.vFull {
+	height: 100%;
+}
+.vBig {
+	height: 66.66%;
+}
+.vSmall {
+	height: 33.33%;
+}
+.vHalf {
+	height: 50%;
+}
+.threeRow {
+	display: flex;
+	flex-wrap: wrap;
+}
+.centerAlign {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.fiBox.big {
+    background: #fe5c5d;
+	flex-direction: column;
+}
+.fiBox.big h1 {
+    color: #000;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.25);
+	margin-bottom: -0.25em;
+}
+.fiBox.explore {
+    background: #595a5f;
+	position: relative;
+	overflow: hidden;
+}
+.fiBox.explore video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	max-width: none;
+	max-height: none;
+	object-fit: cover;
+}
+.fiBox.explore p {
+	position: relative;
+    color: #000;
+}
+.fiBox.dark {
+	background: #1c1e22;
+	font-family: monospace;
+    font-size: 0.8em;
+}
+.fiBox.dark p small {
+    font-size: 0.75em;
+    border-bottom: 2px solid #fe5c5d;
+}
+.fiBox.gray {
+	background: url(../img/author-naren.jpg) no-repeat top center #333333;
+	background-size: cover;
+	align-items: flex-end;
+	padding: 20px;
+	box-sizing: border-box;
+	justify-content: flex-start;
+}
+.iRow {
+    background: white;
+	position: relative;
+}
+.iRow > div {
+	background: #fe5c5d;
+    color: #fff;
+	position: absolute;
+	width: 98%;
+	height: 20%;
+	top: 2.5%;
+	left: 1%;
+	transition: all 0.4s;
+}
+.iRow > div:nth-child(2) {
+	background: #131313;
+	top: 25%;
+	height: 50%;
+}
+.iRow > div:nth-child(3) {
+	background: #6190ba;
+	top: 77.5%;
+}
+.iRow > div:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0;
+}
+.iRow.fBasic > div {
+	width: 30%;
+	height: 90%;
+	left: 2.5%;
+	top: 5% !important;
+}
+.iRow.fBasic > div:nth-child(2) {
+	left: 35%;
+}
+.iRow.fBasic > div:nth-child(3) {
+	left: 67.5%;
+}
+.iRow.fStreched > div {
+	width: 15%;
+}
+.iRow.fStreched > div:nth-child(2) {
+	width: 60%;
+	left: 20%;
+}
+.iRow.fStreched > div:nth-child(3) {
+	left: 82.5%;
+}
+.iRow.fOrder > div:first-child {
+	left: 67.5%;
+}
+.iRow.fOrder > div:nth-child(3) {
+	left: 2.5%;
+}
+.iSlide {
+	background: url(../img/pics/water.jpg) center center no-repeat #131313;
+	background-size: contain;
+}
+
+/* Browser Support */
+.browserSupport {
+    padding: 0 !important;
+    height: 100%;
+}
+.bsBox {
+	background: #A0BFB1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.bsBox figure {
+	position: absolute;
+    width: 50%;
+    height: 60%;
+    left: 10%;
+    bottom: 0;
+    text-align: left;
+}
+.bsBox figure.right {
+    left: auto;
+    right: 10%;
+    text-align: right;
+}
+.doubtBox h2 {
+    position: absolute;
+    width: 58%;
+    color: #523d29;
+    top: 40%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+.bsBox .frame h3 {
+    color: #523d29;
+}
+.bsBox .frame {
+    position: absolute;
+    width: 60%;
+    top: 8%;
+    left: 7%;
+    text-align: left;
+}
+section.basicSection {
+	height: 100%;
+}
+section.basicSection > section {
+	background: #f6fcf8;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	height: 100%;
+    padding: 0 0 7% !important;
+}
+section.basicSection figure {
+    width: 45%;
+}
+section.basicSection h2 {
+	color: #000;
+    margin-bottom: -0.3em;
+}
+section.basicSection p {
+    color: #629e7c;
+	max-width: 940px;
+}
+section.heroSection {
+	display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    top: 0 !important;
+    padding: 0 !important;
+}
+.codepenFrame {
+	background: url(../img/animated/codepenloader.gif) no-repeat center center #000;
+	width: 720px;
+	height: 420px;
+	margin-bottom: 3em;
+}
+section.codeDemo {
+    height: 100%;
+    padding: 0 !important;
+    top: 0 !important;
+    display: flex !important;
+}
+section.codeDemo > div {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+section.codeDemo .sideBar {
+	background: #fe5c5d;
+	align-items: flex-start;
+	width: 33.33%;
+}
+section.codeDemo .sideBar h3 {
+	box-sizing: border-box;
+	color: #000;
+	padding: 0 10%;
+	text-align: left;
+	width: 100%;
+}
+section.codeDemo .sideBar h3 small {
+    font-weight: normal;
+    font-family: monospace;
+	opacity: 0.5;
+	display: block;
+}
+section.codeDemo .sideBar p {
+	box-sizing: border-box;
+    color: #fff;
+    padding: 0 10%;
+    text-align: left;
+    width: 100%;
+    font-size: 0.8em;
+    margin: -0.3em 0 2em;
+}
+section.codeDemo .sideBar ul {
+	box-sizing: border-box;
+    color: #000;
+    padding: 0 10%;
+    text-align: left;
+    width: 100%;
+    font-size: 0.8em;
+    margin: -0.3em 0 2em;
+}
+section.codeDemo .sideBar p mark {
+    background: none;
+	color: #000;
+    border-bottom: 1px solid #fff;
+}
+section.codeDemo .sideBar figure {
+	width: 50%;
+	margin: 0 auto;
+}
+section.codeDemo .sideBar figure.big {
+	width: 80%;
+}
+section.codeDemo .main {
+	flex-grow: 1;
+}

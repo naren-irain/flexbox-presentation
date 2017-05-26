@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Flexbox model - Presentation by Narendran S</title>
+
+		<meta name="description" content="Presenation about responsive images, displaying images based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print.">
+		<meta name="author" content="Narendran S">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="icon" href="assets/img/favicon.png">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/css/zenburn.css">
+
+		<script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
+
+		<!-- OG Details -->
+		<meta property="og:title" content="Flexbox model - Presentation by Narendran S"/>
+		<meta property="og:description" content="Presenation about responsive images, displaying images based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print.">
+	    <meta property="og:image" content="https://naren-irain.github.io/responsive-images/assets/img/responsive-images-presentation.jpg" />
+	    <meta property="og:url" content="https://naren-irain.github.io/responsive-images/" />
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<!-- Landing -->
+				<section class="introSlide">
+					<div class="fcBox">
+						<div class="fiBox big half vFull centerAlign">
+							<h1>Flexbox</h1>
+							<p>a cleaner modern syntax for crafting intelligent layouts.</p>
+						</div>
+						<div class="fiBox threeRow half vFull">
+							<div class="iSlide vSmall full centerAlign"></div>
+							<div class="iRow vSmall full">
+								<div>1</div>
+								<div>2</div>
+								<div>3</div>
+							</div>
+							<div class="fiBox vSmall half dark centerAlign">
+								<p><small>EXPLORE</small><br/>{flex-container-props}<br/>{flex-items-props}<br/>{alignment-tricks}<br/>{order-tricks}</p>
+							</div>
+							<div class="fiBox vSmall half gray centerAlign">
+								<small>Presented by <a href="https://github.com/naren-irain" target="_blank">Narendran S</a></small>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 2 - Browser Support -->
+				<section class="browserSupport">
+					<div class="bsBox doubtBox">
+						<figure>
+							<img src="assets/img/img-doubt.png" alt="Doubt" />
+						</figure>
+						<h2><small>Not yet tried ?</small> <br/> still thinking about<br/> browser support?</h2>
+					</div>
+					<div class="bsBox clearBox fragment fade-in" data-fragment-index="1">
+						<figure class="right">
+							<img src="assets/img/img-clear.png" alt="Clear" />
+						</figure>
+						<div class="frame">
+							<h3>97.67% Global browsers support</h3>
+							<iframe src="http://caniuse.bitsofco.de/embed/index.html?feat=flexbox&amp;periods=current,past_1,past_2" frameborder="0" width="100%" height="536px"></iframe>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 3 - Basics -->
+				<section class="basicSection">
+					<section>
+						<h2>Flexbox Model</h2>
+						<p>The flexible box model provides an improvement over the block model in that it does not use floats. A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p>
+						<div class="codepenFrame">
+							<p data-height="423" data-width="640" data-theme-id="dark" data-slug-hash="YVjPQG" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex box Basic" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/YVjPQG/">Flex box Basic</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+							<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+						</div>
+					</section>
+					<section>
+						<h2>Flexbox Terminology</h2>
+						<p>Once you given an element's display as flex or inline flex,<br/> that element becomes flex container and the direct child elements are flex items.</p>
+						<figure>
+							<img src="assets/img/flex-basics.jpg" alt="Clear" />
+						</figure>
+					</section>
+					<section>
+						<h2>When to Use Flexbox ?</h2>
+						<p>You can use it to align, order and distribute space among items in a container, when their size is unknown and/or dynamic</p>
+						<figure>
+							<img src="assets/img/flexbox/flexbox-model.png" alt="Clear" />
+						</figure>
+					</section>
+				</section>
+
+				<!-- Section 4 - Flex Container Properties -->
+				<section class="twoColumnSection vFull">
+
+					<section class="heroSection">
+						<h2>Flex Container Properties</h2>
+						<nav>
+							<a href="#/2/" id="slide_2">flex</a>,
+							<a href="#/3/1" id="slide_3_1"> flex-direction</a>,
+							<a href="#/3/2" id="slide_3_2"> flex-wrap</a>,
+							<a href="#/3/4" id="slide_3_4"> justify-content</a>,
+							<a href="#/3/5" id="slide_3_5"> align-items</a>,
+							<a href="#/3/6" id="slide_3_6"> align-content</a>
+						</nav>
+					</section>
+
+					<!-- Section 4 - Slide 2 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex-direction} <small>// Default: row</small></h3>
+							<p>The Flex-direction property controls the direction in which the flex-items are laid along the main axis.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-direction.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Flex Direction Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="OmwbWa" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex direction" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/OmwbWa/">Flex direction</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 4 - Slide 3 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex-wrap} <small>// Default: nowrap</small></h3>
+							<p>The Flex-direction property controls the direction in which the flex-items are laid along the main axis.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-wrap.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Flex Wrap Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="OmwbWa" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex direction" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/OmwbWa/">Flex direction</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 4 - Slide 4 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex-flow} <small>// Default: row nowrap</small></h3>
+							<p>This property is a shorthand for setting the <mark>flex-direction</mark> and <mark>flex-wrap</mark> properties.</p>
+						</div>
+						<div class="main">
+							<h3>Flex Flow</h3>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-flow.jpg" alt="Clear" />
+							</figure>
+						</div>
+					</section>
+
+					<!-- Section 4 - Slide 5 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{justify-content} <small>// Default: flex-start</small></h3>
+							<p>This property aligns flex items along the main axis of the current line of the flex container. It helps to distribute the free space left when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/justify-content.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Justify Content Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="XRBMvb" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex justify content" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/XRBMvb/">Flex justify content</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 4 - Slide 6 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{align-items} <small>// Default: stretch</small></h3>
+							<p>This property aligns flex items along the cross axis of the current line of the flex container.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/align-items.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Align Items Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="GmBmEB" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex align items" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/GmBmEB/">Flex align items</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 4 - Slide 7 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{align-content} <small>// Default: stretch</small></h3>
+							<p>It is similar to align-items, but instead of aligning flex items, it aligns flex lines.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/align-content.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Align Content Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="480" data-theme-id="dark" data-slug-hash="LyByJQ" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex align content" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/LyByJQ/">Flex align content</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<!-- Section 5 - Flex Items Properties -->
+				<section class="twoColumnSection vFull">
+
+					<section class="heroSection">
+						<h2>Flex Items Properties</h2>
+						<nav>
+							<a href="#/4/1" id="slide_4_1"> order</a>,
+							<a href="#/4/2" id="slide_4_2"> flex-grow</a>,
+							<a href="#/4/3" id="slide_4_3"> flex-shrink</a>,
+							<a href="#/4/4" id="slide_4_4"> flex-basis</a>,
+							<a href="#/4/5" id="slide_4_5"> flex</a>,
+							<a href="#/4/6" id="slide_4_6"> align-self</a>
+						</nav>
+					</section>
+
+					<!-- Section 5 - Slide 2 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{order} <small>// Default: 0</small></h3>
+							<p>The Flex-direction property controls the direction in which the flex-items are laid along the main axis.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-order.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Flex items order Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="wdxeyW" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex Item - Order" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/wdxeyW/">Flex Item - Order</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 5 - Slide 3 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex-grow} <small>// Default: 0</small></h3>
+							<p>This property specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-grow.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Flex grow Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="zwMVJN" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex grow" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/zwMVJN/">Flex grow</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 5 - Slide 4 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex-shrink} <small>// Default: 1</small></h3>
+							   <p>The flex-shrink specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-shrink.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Flex shrink Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="rmRzBa" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex shrink" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/rmRzBa/">Flex shrink</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 5 - Slide 5 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex-basis} <small>// Default: auto</small></h3>
+							<p>The flex-basis property specifies the initial size of a flex-item. Before the flex-grow or flex-shrink properties adjust it's size to fit the container or not.</p>
+							<ul>
+								<li>When flex-direction is row, flex-basis controls width.</li>
+								<li>But when flex-direction is column, flex-basis controls height.</li>
+							</ul>
+						</div>
+						<div class="main">
+							<h3>Flex basis Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="wdxeyW" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex Item - Order" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/wdxeyW/">Flex Item - Order</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 5 - Slide 6 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{flex} <small>// Default: 0 1 auto</small></h3>
+							<p>This property specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed.</p>
+						</div>
+						<div class="main">
+							<h3>Flex Example:</h3>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-flow.jpg" alt="Clear" />
+							</figure>
+						</div>
+					</section>
+
+					<!-- Section 5 - Slide 7 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>{align-self} <small>// Default: auto</small></h3>
+							<p>This property specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed.</p>
+							<figure class="big">
+								<img src="assets/img/flexbox/flex-order.png" alt="Clear" />
+							</figure>
+						</div>
+						<div class="main">
+							<h3>Flex align-self Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="wdxeyW" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex Item - Order" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/wdxeyW/">Flex Item - Order</a> by naren (<a href="http://codepen.io/narenkrds">@narenkrds</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<section style="text-align: left;">
+					<div class="previewBlk full">
+						<h1>TASK</h1>
+						<p>
+							<b>Develop 3 articles with a banner and a description. <a href="assets/src.zip" download>Source</a></b> <br>
+							<ol>
+								<li>First article using css media/css image-set</li>
+								<li>Second article using picture tag</li>
+								<li>Third article using srcset and sizes attribute</li>
+							</ol>
+						</p>
+					</div>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THANK YOU</h1>
+					<p>
+						Useful Links: <br>
+						- <a href="https://responsiveimages.org/" target="_blank">RICG: Responsive images</a>
+						- <a href="https://make.wordpress.org/core/2015/11/10/responsive-images-in-wordpress-4-4/" target="_blank">Responsive images in wordpress</a> <br>
+						- <a href="https://cloudfour.com/examples/image-set/" target="_blank">image-set() test</a>
+						- <a href="https://scottjehl.github.io/picturefill/" target="_blank">Picturefill</a>
+						- <a href="https://webp-converter.com/" target="_blank">Online Webp Convertor</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="assets/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+			});
+
+		</script>
+
+		<script src='assets/js/jquery-resizable/jquery-resizable.js' type='text/javascript'></script>
+		<script>
+			var flexAnimateSpeed = 3000, flexInterval, flexTI = {};
+			function flexAnimate(speed) {
+				$('.iRow').attr('class','iRow vSmall full');
+				flexTI['1'] = setTimeout(function(){
+					$('.iRow').addClass('fBasic');
+				}, speed);
+				flexTI['2'] = setTimeout(function(){
+					$('.iRow').addClass('fStreched');
+				}, speed * 2);
+				flexTI['3'] = setTimeout(function(){
+					$('.iRow').removeClass('fStreched');
+				}, speed * 3);
+				flexTI['4'] = setTimeout(function(){
+					$('.iRow').addClass('fOrder');
+				}, speed * 4);
+				flexTI['5'] = setTimeout(function(){
+					$('.iRow').removeClass('fBasic fOrder');
+				}, speed * 5);
+			}
+
+			function initflexAnimate() {
+				flexAnimate(flexAnimateSpeed);
+				flexInterval = setInterval(function(){
+					flexAnimate(flexAnimateSpeed);
+				}, flexAnimateSpeed * 5);
+			}
+		</script>
+		<script>
+			var initFromOne = false;
+			Reveal.addEventListener( 'ready', function( event ) {
+				// event.currentSlide, event.indexh, event.indexv
+				if(event.indexh == 0) {
+					initflexAnimate();
+					initFromOne = true;
+				}
+			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+				if(event.indexh == 0) {
+					initflexAnimate();
+					initFromOne = true;
+				}
+				else if(initFromOne) {
+					clearInterval(flexInterval);
+					for(var i = 1; i <= 5; i++) {
+						clearTimeout(flexTI[i])
+					}
+				}
+			});
+		</script>
+
+	</body>
+</html>
