@@ -357,7 +357,81 @@
 				<section class="twoColumnSection vFull">
 
 					<section class="heroSection">
-						<h2>So, how the basic flex worked ?</h2>
+						<h3>So, How the basic flex is working <br/><small>its just 'display: flex'. but, comes with useful default properties</small></h3>
+						<div class="efcBox">
+							<div class="fiBox">1</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis vel quibusdam, porro officia distinctio, veniam atque quo unde fugit non aut voluptatem neque ratione nemo doloremque.</p>
+						</div>
+						<ol>
+							<li class="fragment" data-fragment-index="1">once you have given <mark>display: flex</mark>, all the child elements displayed in the same axis</li>
+							<li class="fragment" data-fragment-index="2">default <mark>flex-direction: row</mark>, makes all the child elements displayed in the main(Horizontal) axis</li>
+							<li class="fragment" data-fragment-index="3">default <mark>flex-wrap: nowrap</mark>, makes the child elements not to wrap from the main axis</li>
+							<li class="fragment" data-fragment-index="4">default <mark>flex-shrink: 1</mark>, shrinks the second child element from the negative space</li>
+							<li class="fragment" data-fragment-index="5">default <mark>align-items: strech</mark>, streches the first child element upto the container height</li>
+						</ol>
+					</section>
+
+				</section>
+
+				<!-- Section 7 - Flex Items Properties -->
+				<section class="twoColumnSection vFull">
+
+					<section class="heroSection tips">
+						<h2>Useful Tips & Tricks</h2>
+					</section>
+
+					<!-- Section 7 - Slide 2 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>Vertically center</h3>
+							<p>Before flexbox, vertical centering of dynamic content was a non-trivial task. Now with simple flex properties we can achieve this.</p>
+<pre>
+  .vCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</pre>
+						</div>
+						<div class="main">
+							<h3>Flex vertically center Example:</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="ZKdKNL" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex vertical center" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/ZKdKNL/">Flex vertical center</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 8 - Slide 3 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>Full screen view</h3>
+							<p>No more javascript to set the full screen app main content height. Use flex-grow and flex-basis to acheive this.</p>
+<pre>
+  .app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .app header {
+    flex: 0 1 48px;
+  }
+  .app footer {
+    flex: 0 1 34px;
+  }
+  .mainContent {
+    flex: 1 1 auto;
+  }
+</pre>
+						</div>
+						<div class="main">
+							<h3>Full screen view</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="LyKLyX" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex fullscreen app" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/LyKLyX/">Flex fullscreen app</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
 					</section>
 
 				</section>
