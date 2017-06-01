@@ -6,7 +6,7 @@
 
 		<title>Flexbox model - Presentation by Narendran S</title>
 
-		<meta name="description" content="Presenation about responsive images, displaying images based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print.">
+		<meta name="description" content="Presenation about Flexbox model, a cleaner modern syntax for crafting intelligent layouts. Explore flexbox properties and tricks.">
 		<meta name="author" content="Narendran S">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,9 +26,9 @@
 
 		<!-- OG Details -->
 		<meta property="og:title" content="Flexbox model - Presentation by Narendran S"/>
-		<meta property="og:description" content="Presenation about responsive images, displaying images based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print.">
-	    <meta property="og:image" content="https://naren-irain.github.io/responsive-images/assets/img/responsive-images-presentation.jpg" />
-	    <meta property="og:url" content="https://naren-irain.github.io/responsive-images/" />
+		<meta property="og:description" content="Presenation about Flexbox model, a cleaner modern syntax for crafting intelligent layouts. Explore flexbox properties and tricks.">
+	    <meta property="og:image" content="https://naren-irain.github.io/flexbox-presentation/assets/img/flexbox-presentation.jpg" />
+	    <meta property="og:url" content="https://naren-irain.github.io/flexbox-presentation/" />
 
 	</head>
 
@@ -434,32 +434,97 @@
 						</div>
 					</section>
 
+					<!-- Section 8 - Slide 4 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>Margin auto trick</h3>
+							<p>You may noticed there is align-self property to align items in cross axis. But, no justify-self property to align flex items in the main axis.
+								<br>You can use margin auto for this scenario.
+							</p>
+<pre>
+  .rightChild {
+    margin-left: auto;
+  }
+</pre>
+						</div>
+						<div class="main">
+							<h3>Moving flex items with margin auto</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="mmNNBV" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex margin auto" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/mmNNBV/">Flex margin auto</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 8 - Slide 5 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>Margin auto trick</h3>
+							<p>You can center align a single flex child using margin auto.</p>
+<pre>
+  .parent {
+    display: flex;
+  }
+  .singleChild {
+    margin: auto;
+  }
+</pre>
+						</div>
+						<div class="main">
+							<h3>Vertically center a flex item with margin auto</h3>
+							<div class="codepenFrame">
+								<p data-height="420" data-theme-id="dark" data-slug-hash="qjWBQM" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Flex center with margin auto" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/qjWBQM/">Flex center with margin auto</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section 8 - Slide 6 -->
+					<section class="heroSection">
+						<h2>Known issues</h2>
+						<ol>
+							<li class="fragment" data-fragment-index="1">Display flex currently not working with <mark>button</mark> element in firefox and fieldset in most browsers</li>
+							<li class="fragment" data-fragment-index="2">IE 11 does not vertically align items correctly when <mark>min-height</mark> is used</li>
+							<li class="fragment" data-fragment-index="3">In IE10 the default value for flex is <mark>0 0 auto</mark> rather than <mark>0 1 auto</mark> as defined in the latest spec</li>
+							<li class="fragment" data-fragment-index="4">Flex-shrink conflicts with percentage units in width/height. For this use flex-basis.</li>
+						</ol>
+					</section>
+
 				</section>
 
-				<section style="text-align: left;">
-					<div class="previewBlk full">
-						<h1>TASK</h1>
+				<section class="twoColumnSection vFull" style="text-align: left;">
+
+					<section class="heroSection taskSection">
+						<div class="previewBlk full">
+							<h1>TASK</h1>
+							<p>
+								<b>Recreate given layouts in the zip files with flexbox modal. <a href="assets/src/task.zip" download>Source</a></b> <br>
+								<ol>
+									<li>Fullscreen mobile app, with fixed footer and header.</li>
+									<li>Zig zag layout using flexbox order</li>
+									<li>Change flexbox modal with responsive breakpoints in one of the above example</li>
+									<li>Complete the flexbox froggy game <a href="https://flexboxfroggy.com/" target="_blank">https://flexboxfroggy.com/</a></li>
+								</ol>
+							</p>
+						</div>
+					</section>
+
+				</section>
+
+				<section class="endSection vFull" style="text-align: left;">
+
+					<section class="heroSection">
+						<h1>THANK YOU</h1>
 						<p>
-							<b>Develop 3 articles with a banner and a description. <a href="assets/src.zip" download>Source</a></b> <br>
-							<ol>
-								<li>First article using css media/css image-set</li>
-								<li>Second article using picture tag</li>
-								<li>Third article using srcset and sizes attribute</li>
-							</ol>
+							Useful Links: <br>
+							- <a href="https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35" target="_blank">An animated guide to flexbox</a>
+							- <a href="https://philipwalton.github.io/solved-by-flexbox/" target="_blank">Solved by flexbox</a> <br>
+							- <a href="https://github.com/philipwalton/flexbugs" target="_blank">Known flex bugs</a>
+							- <a href="http://bennettfeely.com/flexplorer/" target="_blank">Visual Flex builder</a>
+							- <a href="https://madebymike.com.au/demos/flexbox-tester/" target="_blank">Flexbox flex shorthand tester</a>
 						</p>
-					</div>
-				</section>
+					</section>
 
-				<section style="text-align: left;">
-					<h1>THANK YOU</h1>
-					<p>
-						Useful Links: <br>
-						- <a href="https://responsiveimages.org/" target="_blank">RICG: Responsive images</a>
-						- <a href="https://make.wordpress.org/core/2015/11/10/responsive-images-in-wordpress-4-4/" target="_blank">Responsive images in wordpress</a> <br>
-						- <a href="https://cloudfour.com/examples/image-set/" target="_blank">image-set() test</a>
-						- <a href="https://scottjehl.github.io/picturefill/" target="_blank">Picturefill</a>
-						- <a href="https://webp-converter.com/" target="_blank">Online Webp Convertor</a>
-					</p>
 				</section>
 
 			</div>

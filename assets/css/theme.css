@@ -709,3 +709,24 @@ section.codeDemo .main {
 	width: 100%;
 	font-size: 0;
 }
+.taskSection {
+	background: url(../img/bg-task.jpg) no-repeat top center #181824;
+	background-size: cover;
+}
+.taskSection .previewBlk.full {
+	padding: 0 10%;
+    box-sizing: border-box;
+}
+.taskSection .previewBlk.full ol {
+    padding-left: 30px;
+}
+.reveal section.endSection {
+	top: 0 !important;
+}
+.reveal section.endSection .heroSection {
+	padding: 0 10%;
+	background: url(../img/bg-end.jpg) no-repeat top center #181824;
+	background-size: cover;
+    box-sizing: border-box;
+	top: 0 !important;
+}
