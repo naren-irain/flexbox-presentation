@@ -456,6 +456,33 @@
 						</div>
 					</section>
 
+					<!-- Section 8 - Slide 3 -->
+					<section class="codeDemo">
+						<div class="sideBar">
+							<h3>Transition with flex</h3>
+							<p>Not all the flexbox properties are aupport transition. Transition applicable properties are: flex-grow, flex-shrink, flex-basis, flex</p>
+<pre>
+  .fiBox {
+    flex-basis: 200px;
+    transition: flex-basis 0.5s;
+  }
+  .parent:hover .fiBox {
+    flex-basis: 150px;
+  }
+  .parent:hover .fiBox:hover {
+    flex-basis: 300px;
+  }
+</pre>
+						</div>
+						<div class="main">
+							<h3>Animate flex items using flex basis</h3>
+							<div class="codepenFrame">
+								<p data-height="440" data-theme-id="dark" data-slug-hash="vZOzKj" data-default-tab="result" data-user="narenkrds" data-embed-version="2" data-pen-title="Animate flex-basis" class="codepen">See the Pen <a href="https://codepen.io/narenkrds/pen/vZOzKj/">Animate flex-basis</a> by naren (<a href="https://codepen.io/narenkrds">@narenkrds</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+								<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+							</div>
+						</div>
+					</section>
+
 					<!-- Section 8 - Slide 4 -->
 					<section class="codeDemo">
 						<div class="sideBar">
@@ -509,6 +536,7 @@
 							<li class="fragment" data-fragment-index="2">IE 11 does not vertically align items correctly when <mark>min-height</mark> is used</li>
 							<li class="fragment" data-fragment-index="3">In IE10 the default value for flex is <mark>0 0 auto</mark> rather than <mark>0 1 auto</mark> as defined in the latest spec</li>
 							<li class="fragment" data-fragment-index="4">Flex-shrink conflicts with percentage units in width/height. For this use flex-basis.</li>
+							<li class="fragment" data-fragment-index="5">Not all the flexbox properties are aupport transition. Transition applicable properties are: flex-grow, flex-shrink, flex-basis, flex</li>
 						</ol>
 					</section>
 
